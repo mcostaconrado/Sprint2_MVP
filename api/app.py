@@ -75,31 +75,3 @@ def predict(form: ReservaSchema):
     )
 
     return apresenta_reserva(reserva), 200
-    '''
-    logger.debug(f"Adicionando reserva: '{reserva}'")
-    
-    try:
-        # Criando conexão com a base
-        session = Session()
-        
-        # Checando se paciente já existe na base
-        if session.query(Reserva).filter(Reserva.id == form.name).first():
-            error_msg = "Paciente já existente na base :/"
-            logger.warning(f"Erro ao adicionar paciente '{paciente.name}', {error_msg}")
-            return {"message": error_msg}, 409
-        
-        # Adicionando paciente
-        session.add(paciente)
-        # Efetivando o comando de adição
-        session.commit()
-        # Concluindo a transação
-        logger.debug(f"Adicionado paciente de nome: '{paciente.name}'")
-        return apresenta_paciente(paciente), 200
-    
-    # Caso ocorra algum erro na adição
-    except Exception as e:
-        error_msg = "Não foi possível salvar novo item :/"
-        logger.warning(f"Erro ao adicionar paciente '{paciente.name}', {error_msg}")
-        return {"message": error_msg}, 400
-    '''
-
