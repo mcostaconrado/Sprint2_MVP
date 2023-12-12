@@ -1,4 +1,3 @@
-from sqlalchemy_utils import database_exists, create_database
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy import create_engine
-import os
+# importando os elementos definidos no modelo
+from model.reserva import Reserva
+from model.modelo import Model

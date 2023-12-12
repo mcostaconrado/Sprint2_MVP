@@ -3,7 +3,6 @@ from sqlalchemy.orm import relationship
 from datetime import datetime
 from typing import Union
 
-from  model import Base
 
 # colunas = Pregnancies,Glucose,BloodPressure,SkinThickness,test,BMI,DiabetesPedigreeFunction,Age,Outcome
 '''
@@ -14,7 +13,9 @@ no_of_previous_bookings_Not_Cancelled,avg_price_per_room,no_of_special_requests,
 
 '''
 
-class Reserva(Base):
+class Reserva():
+    
+    '''
     __tablename__ = 'reserva'
     
     id = Column(Integer, primary_key=True)
@@ -34,12 +35,13 @@ class Reserva(Base):
     outcome = Column("outcome", Integer)
 
     data_insercao = Column(DateTime, default=datetime.now())
+    '''
     
     def __init__(   self, no_of_adults: int, no_of_children: int, 
                     no_of_weekend_nights: int, no_of_week_nights: int,
                     required_car_parking_space: int, lead_time: int, arrival_month: int, arrival_date: int,
                     repeated_guest: int, no_of_previous_cancellations: int, no_of_previous_bookings_Not_Cancelled: int,
-                    avg_price_per_room,no_of_special_requests: int, outcome: int, data_insercao:Union[DateTime, None] = None):
+                    avg_price_per_room,no_of_special_requests: int, outcome: int):
         
         """
         Cria uma Reserva
@@ -78,6 +80,3 @@ class Reserva(Base):
         self.no_of_special_requests = no_of_special_requests
         self.outcome = outcome
         
-        # se não for informada, será o data exata da inserção no banco
-        if data_insercao:
-            self.data_insercao = data_insercao
