@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>AI Cool Hotel System</title>
+    <link rel="icon" href="img/home_logo.png" type="image/png">
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>AI Cool Hotel</h2>
+            <br>
+            <p>This software was developed to help hotel owners to identify reservations with high probability of being cancelled.</p>
+            <p>To use the model, all you need to do is fill the details below. The model will automatically give the results.</p>
+        </div>
+        <!-- <div class="banner">
+            <img src="img/home.jpeg">
+        </div> -->
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+     
+    <section class="newItem">
+        <div>
+            <input type="text" id="new_no_of_adults" placeholder="No. Adults"><br><br>
+            <input type="text" id="new_no_of_children" placeholder="No. Children"><br><br>
+            <input type="text" id="new_no_of_weekend_nights" placeholder="No. weekend nights"><br><br>
+            <input type="text" id="new_no_of_week_nights" placeholder="No. week nights"><br><br>
+            <input type="text" id="new_required_car_parking_space" placeholder="Req. Car"><br><br>
+            <input type="text" id="new_lead_time" placeholder="Lead Time (days)"><br><br>
+            <input type="text" id="new_arrival_month" placeholder="Arr. Month"><br><br>
+            <input type="text" id="new_arrival_date" placeholder="Arr. Day"><br><br>
+            <input type="text" id="new_repeated_guest" placeholder="Rep. Guest?"><br><br>
+            <input type="text" id="new_no_of_previous_cancellations" placeholder="No. Prev. Cancellations"><br><br>
+            <input type="text" id="new_no_of_previous_bookings_Not_Cancelled" placeholder="No. Prev. Success Res."><br><br>
+            <input type="text" id="new_avg_price_per_room" placeholder="Room price"><br><br>
+            <input type="text" id="new_no_of_requests" placeholder="No. Requests">
+        </div>
+    </section>
+
+    <section class="newItem">
+        <span onclick="newItem()" class="addBtn">Predict</span>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
