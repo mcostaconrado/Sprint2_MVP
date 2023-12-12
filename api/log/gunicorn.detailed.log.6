@@ -1,4 +1,5 @@
-[2023-12-11 22:20:10,072] ERROR log_exception() L825  Exception on /reserva [POST] - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py L825 
+[2023-12-11 22:28:13,666] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/schemas/reserva_schema.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-11 22:28:21,079] ERROR log_exception() L825  Exception on /reserva [POST] - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py L825 
 Traceback (most recent call last):
   File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
     response = self.full_dispatch_request()
@@ -12,48 +13,10 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
   File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask_openapi3/scaffold.py", line 117, in view_func
     response = func(**func_kwargs)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/app.py", line 72, in predict
-    outcome = Model.preditor(modelo, form)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/model/modelo.py", line 38, in preditor
-    print(x_input)
-NameError: name 'x_input' is not defined
-[2023-12-11 22:20:10,087] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 22:20:10] "[35m[1mPOST /reserva HTTP/1.1[0m" 500 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:20:18,152] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/model/modelo.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:20:22,418] ERROR log_exception() L825  Exception on /reserva [POST] - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py L825 
-Traceback (most recent call last):
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 889, in finalize_request
-    response = self.make_response(rv)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 1161, in make_response
-    raise TypeError(
-TypeError: The view function for 'predict' did not return a valid response. The function either returned None or ended without a return statement.
-[2023-12-11 22:20:22,422] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 22:20:22] "[35m[1mPOST /reserva HTTP/1.1[0m" 500 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:20:50,313] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/model/modelo.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:20:57,166] ERROR log_exception() L825  Exception on /reserva [POST] - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py L825 
-Traceback (most recent call last):
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 889, in finalize_request
-    response = self.make_response(rv)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 1161, in make_response
-    raise TypeError(
-TypeError: The view function for 'predict' did not return a valid response. The function either returned None or ended without a return statement.
-[2023-12-11 22:20:57,171] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 22:20:57] "[35m[1mPOST /reserva HTTP/1.1[0m" 500 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:21:14,062] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/model/modelo.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:21:18,149] ERROR log_exception() L825  Exception on /reserva [POST] - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py L825 
-Traceback (most recent call last):
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 889, in finalize_request
-    response = self.make_response(rv)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 1161, in make_response
-    raise TypeError(
-TypeError: The view function for 'predict' did not return a valid response. The function either returned None or ended without a return statement.
-[2023-12-11 22:21:18,154] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 22:21:18] "[35m[1mPOST /reserva HTTP/1.1[0m" 500 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/app.py", line 75, in predict
+    return apresenta_reserva(reserva), 200
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/schemas/reserva_schema.py", line 78, in apresenta_reserva
+    "no_of_previous_bookings_0": no_of_previous_bookings_Not_Cancelled,
+NameError: name 'no_of_previous_bookings_Not_Cancelled' is not defined
+[2023-12-11 22:28:21,086] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 22:28:21] "[35m[1mPOST /reserva HTTP/1.1[0m" 500 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-11 22:28:36,019] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/schemas/reserva_schema.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  

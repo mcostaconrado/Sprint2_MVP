@@ -1,6 +1,8 @@
 import numpy as np
 import pickle
 import joblib
+from sklearn.preprocessing import StandardScaler
+
 
 class Model:
     
@@ -35,7 +37,9 @@ class Model:
                             form.no_of_special_requests,  
                         ])
         # Faremos o reshape para que o modelo entenda que estamos passando
-        
-        diagnosis = model.predict(X_input.reshape(1, -1))
+        X_input = X_input.reshape(1, -1)
+        scaler = StandardScaler().fit(X_input) # aplicação da padronização no conjunto de treino 
+        rescaledX = scaler.transform(X_input)
+        diagnosis = model.predict(rescaledX)
 
         return int(diagnosis[0])

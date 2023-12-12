@@ -1,47 +1,54 @@
-[2023-12-11 22:21:39,021] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:22:17,319] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/app.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:22:17,501] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:23:14,299] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/app.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:23:14,489] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:23:19,201] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:23:23,119] ERROR log_exception() L825  Exception on /reserva [POST] - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py L825 
-Traceback (most recent call last):
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 889, in finalize_request
-    response = self.make_response(rv)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 1197, in make_response
-    raise TypeError(
-TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a Reserva.
-[2023-12-11 22:23:23,125] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 22:23:23] "[35m[1mPOST /reserva HTTP/1.1[0m" 500 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:25:57,983] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/app.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:25:58,302] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:26:02,284] ERROR log_exception() L825  Exception on /reserva [POST] - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py L825 
-Traceback (most recent call last):
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask_openapi3/scaffold.py", line 117, in view_func
-    response = func(**func_kwargs)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/app.py", line 75, in predict
-    return apresenta_reserva(reserva), 200
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/schemas/reserva_schema.py", line 69, in apresenta_reserva
-    "no_of_children": reserva.reserva.no_of_children,
-AttributeError: 'Reserva' object has no attribute 'reserva'
-[2023-12-11 22:26:02,291] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 22:26:02] "[35m[1mPOST /reserva HTTP/1.1[0m" 500 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:26:58,401] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/schemas/reserva_schema.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:26:58,717] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:27:07,359] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/schemas/reserva_schema.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:27:07,559] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:27:36,556] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:27:51,116] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:28:13,963] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-11 23:01:41,064] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-11 23:02:19,055] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-11 23:02:25,315] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-11 23:05:24,373] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-11 23:06:13,793] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-11 23:07:09,565] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/test_modelos.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-11 23:07:09,797] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-11 23:19:58,284] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.4:5000 - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-11 23:19:58,285] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-11 23:19:58,287] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-11 23:20:18,136] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/app.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-11 23:20:18,367] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:25:53,908] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.4:5000 - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:25:53,910] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:27:53,016] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.4:5000 - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:27:53,017] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:28:28,267] INFO _log() L96   127.0.0.1 - - [12/Dec/2023 17:28:28] "POST /reserva HTTP/1.1" 200 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:29:16,307] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.4:5000 - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:29:16,308] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:29:16,310] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:29:22,359] INFO _log() L96   127.0.0.1 - - [12/Dec/2023 17:29:22] "POST /reserva HTTP/1.1" 200 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:29:40,087] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/model/__init__.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:29:40,420] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:30:34,647] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.4:5000 - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:30:34,649] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:30:34,652] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:30:48,650] INFO _log() L96   127.0.0.1 - - [12/Dec/2023 17:30:48] "POST /reserva HTTP/1.1" 200 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:38:01,048] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.4:5000 - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:38:01,049] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:38:01,052] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:38:57,939] INFO _log() L96   127.0.0.1 - - [12/Dec/2023 17:38:57] "[33mGET /registros HTTP/1.1[0m" 404 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 17:49:37,510] INFO _log() L96   127.0.0.1 - - [12/Dec/2023 17:49:37] "POST /reserva HTTP/1.1" 200 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 18:58:45,110] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.4:5000 - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  

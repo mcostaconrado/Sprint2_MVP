@@ -31,22 +31,26 @@ def home():
 @app.post('/reserva', tags=[reserva_tag],
           responses={"200": ReservaViewSchema, "400": ErrorSchema, "409": ErrorSchema})
 def predict(form: ReservaSchema):
-    """Adiciona um novo paciente à base de dados
-    Retorna uma representação dos pacientes e diagnósticos associados.
+    """Predicts if a booking will be cancelled
+    Returns the prediction
     
     Args:
-        name (str): nome do paciente
-        preg (int): número de vezes que engravidou: Pregnancies
-        plas (int): concentração de glicose no plasma: Glucose
-        pres (int): pressão diastólica (mm Hg): BloodPressure
-        skin (int): espessura da dobra cutânea do tríceps (mm): SkinThickness
-        test (int): insulina sérica de 2 horas (mu U/ml): Insulin
-        mass (float): índice de massa corporal (peso em kg/(altura em m)^2): BMI
-        pedi (float): função pedigree de diabetes: DiabetesPedigreeFunction
-        age (int): idade (anos): Age
-        
+        no_of_adults (int): number of adults
+        no_of_children (int): number of children
+        no_of_weekend_nights (int): number of weekend nights that will be spent
+        no_of_week_nights (int): number of weekend nights that will be spent
+        required_car_parking_space (bool): guest required a parking car space?
+        lead_time (int): number of days between booking and check-in
+        arrival_month (int): 1-12 number of the month (check-in)
+        arrival_date (int): 1-31 number of the day (check-in)
+        repeated_guest (bool): guest was already a client before?
+        no_of_previous_cancellations (int): number of previous cancelled bookings made by the guest
+        no_of_previous_bookings_Not_Cancelled (int): number of previous successful bookings made  by the guest
+        avg_price_per_room (float): Room price
+        no_of_special_requests (int): number of special requests made by the guest
+         
     Returns:
-        dict: representação do paciente e diagnóstico associado
+        int: The final prediction
     """
     
     # Carregando modelo

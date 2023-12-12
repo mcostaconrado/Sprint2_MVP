@@ -2,6 +2,7 @@ from model.avaliador import Avaliador
 from model.modelo import Model
 import pandas as pd
 import pickle
+from sklearn.preprocessing import StandardScaler
 
 # To run: pytest -v test_modelos.py
 
@@ -24,8 +25,9 @@ def test_modelo_CART():
     # Importando o modelo de árvore de decisão
     path = 'ml_model/HotelReservation_CART_model.pkl'
     modelo = pickle.load(open(path, 'rb'))
-
-    # Obtendo as métricas da Regressão Logística
-    acuracia, recall, precisao, f1 = avaliador.avaliar(modelo, X, Y)
     
-    assert acuracia >= 0.7
+    scaler = StandardScaler().fit(X) # aplicação da padronização no conjunto de treino 
+    rescaledX = scaler.transform(X)
+    acuracia, recall, precisao, f1 = avaliador.avaliar(modelo, rescaledX, Y)
+    
+    assert acuracia >= 0.70

@@ -1,62 +1,59 @@
-[2023-12-11 22:27:13,367] ERROR log_exception() L825  Exception on /reserva [POST] - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py L825 
+[2023-12-12 18:58:45,111] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 18:58:45,119] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 18:59:15,894] INFO _log() L96   127.0.0.1 - - [12/Dec/2023 18:59:15] "[31m[1mPOST /reserva HTTP/1.1[0m" 422 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:01:49,176] ERROR log_exception() L825  Exception on /reserva [POST] - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/flask/app.py L825 
 Traceback (most recent call last):
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
     response = self.full_dispatch_request()
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
     return cors_after_request(app.make_response(f(*args, **kwargs)))
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask_openapi3/scaffold.py", line 117, in view_func
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/flask_openapi3/scaffold.py", line 117, in view_func
     response = func(**func_kwargs)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/app.py", line 75, in predict
-    return apresenta_reserva(reserva), 200
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/schemas/reserva_schema.py", line 78, in apresenta_reserva
-    "no_of_previous_bookings_Not_Cancelled": no_of_previous_bookings_Not_Cancelled,
-NameError: name 'no_of_previous_bookings_Not_Cancelled' is not defined
-[2023-12-11 22:27:13,382] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 22:27:13] "[35m[1mPOST /reserva HTTP/1.1[0m" 500 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:27:36,267] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/schemas/reserva_schema.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:27:41,435] ERROR log_exception() L825  Exception on /reserva [POST] - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py L825 
-Traceback (most recent call last):
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask_openapi3/scaffold.py", line 117, in view_func
-    response = func(**func_kwargs)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/app.py", line 75, in predict
-    return apresenta_reserva(reserva), 200
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/schemas/reserva_schema.py", line 78, in apresenta_reserva
-    "no_of_previous_bookings_0": no_of_previous_bookings_Not_Cancelled,
-NameError: name 'no_of_previous_bookings_Not_Cancelled' is not defined
-[2023-12-11 22:27:41,444] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 22:27:41] "[35m[1mPOST /reserva HTTP/1.1[0m" 500 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:27:50,797] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/schemas/reserva_schema.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
-[2023-12-11 22:27:59,096] ERROR log_exception() L825  Exception on /reserva [POST] - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py L825 
-Traceback (most recent call last):
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask_openapi3/scaffold.py", line 117, in view_func
-    response = func(**func_kwargs)
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/app.py", line 75, in predict
-    return apresenta_reserva(reserva), 200
-  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/schemas/reserva_schema.py", line 78, in apresenta_reserva
-    "no_of_previous_bookings_Not_Cancelled": no_of_previous_bookings_Not_Cancelled,
-NameError: name 'no_of_previous_bookings_Not_Cancelled' is not defined
-[2023-12-11 22:27:59,116] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 22:27:59] "[35m[1mPOST /reserva HTTP/1.1[0m" 500 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/app.py", line 70, in predict
+    outcome = Model.preditor(modelo, form)
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/model/modelo.py", line 41, in preditor
+    scaler = StandardScaler().fit(X_input) # aplicação da padronização no conjunto de treino
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/sklearn/preprocessing/_data.py", line 824, in fit
+    return self.partial_fit(X, y, sample_weight)
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/sklearn/preprocessing/_data.py", line 861, in partial_fit
+    X = self._validate_data(
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/sklearn/base.py", line 565, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/sklearn/utils/validation.py", line 902, in check_array
+    raise ValueError(
+ValueError: Expected 2D array, got 1D array instead:
+array=[  2.   0.   2.   0.   0.  28.   9.  18.   0.   0.   0. 149.   1.].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+[2023-12-12 19:01:49,211] INFO _log() L96   127.0.0.1 - - [12/Dec/2023 19:01:49] "[35m[1mPOST /reserva HTTP/1.1[0m" 500 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:02:34,153] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/model/modelo.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:02:34,415] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:02:40,706] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/model/modelo.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:02:40,968] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:02:53,054] INFO _log() L96   127.0.0.1 - - [12/Dec/2023 19:02:53] "POST /reserva HTTP/1.1" 200 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:04:03,162] INFO _log() L96   127.0.0.1 - - [12/Dec/2023 19:04:03] "POST /reserva HTTP/1.1" 200 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:04:40,028] INFO _log() L96   127.0.0.1 - - [12/Dec/2023 19:04:40] "POST /reserva HTTP/1.1" 200 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:05:18,282] INFO _log() L96   127.0.0.1 - - [12/Dec/2023 19:05:18] "POST /reserva HTTP/1.1" 200 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:06:05,726] INFO _log() L96   127.0.0.1 - - [12/Dec/2023 19:06:05] "[31m[1mPOST /reserva HTTP/1.1[0m" 422 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:07:23,640] INFO _log() L96   127.0.0.1 - - [12/Dec/2023 19:07:23] "[31m[1mPOST /reserva HTTP/1.1[0m" 422 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:07:39,013] INFO _log() L96   127.0.0.1 - - [12/Dec/2023 19:07:39] "POST /reserva HTTP/1.1" 200 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:07:47,347] INFO _log() L96   127.0.0.1 - - [12/Dec/2023 19:07:47] "POST /reserva HTTP/1.1" 200 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:08:10,554] INFO _log() L96   127.0.0.1 - - [12/Dec/2023 19:08:10] "POST /reserva HTTP/1.1" 200 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:10:22,901] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/model/modelo.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:10:23,185] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:10:29,021] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/model/modelo.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:10:29,448] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:10:39,731] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/model/modelo.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:10:39,975] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:10:59,685] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:11:14,479] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:11:24,643] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:11:35,930] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:11:45,339] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:12:16,513] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-12 19:12:27,919] INFO _log() L96    * Restarting with stat - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/Sprint2_MVP/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
