@@ -1,0 +1,13 @@
+[2023-12-11 22:06:17,857] ERROR log_exception() L825  Exception on /reserva [POST] - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py L825 
+Traceback (most recent call last):
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/flask/app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'predict' did not return a valid response. The function either returned None or ended without a return statement.
+[2023-12-11 22:06:17,872] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 22:06:17] "[35m[1mPOST /reserva HTTP/1.1[0m" 500 - - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
+[2023-12-11 22:06:48,607] INFO _log() L96    * Detected change in '/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/model/modelo.py', reloading - call_trace=/Users/conradocosta/Desktop/Pos/Sprint 2/git_disciplina/engenharia-de-software/mvp-qualidade-seguranca-sistemas-inteligentes/exemplo_mvp/api/env_app/lib/python3.9/site-packages/werkzeug/_internal.py L96  
