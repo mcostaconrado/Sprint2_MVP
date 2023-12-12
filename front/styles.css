@@ -15,6 +15,13 @@ header {
     width: 100%;
 }
 
+.guia {
+    background-color: rgb(225, 222, 199);
+    color: rgb(0, 0, 0);
+    display: flex;
+
+}
+
 .title {
     color: white;
     width: 100%;
