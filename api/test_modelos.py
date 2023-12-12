@@ -28,4 +28,4 @@ def test_modelo_CART():
     # Obtendo as métricas da Regressão Logística
     acuracia, recall, precisao, f1 = avaliador.avaliar(modelo, X, Y)
     
-    assert acuracia >= 0.3
+    assert acuracia >= 0.7
